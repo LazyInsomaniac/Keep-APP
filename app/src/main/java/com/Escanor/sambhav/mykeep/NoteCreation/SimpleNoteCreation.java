@@ -1,4 +1,4 @@
-package com.mykeep.r3j3ct3d.mykeep.NoteCreation;
+package com.Escanor.sambhav.mykeep.NoteCreation;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -18,7 +18,7 @@ import android.widget.RadioGroup;
 import android.widget.TableLayout;
 import android.widget.TextView;
 
-import com.mykeep.r3j3ct3d.mykeep.R;
+import com.Escanor.sambhav.mykeep.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;

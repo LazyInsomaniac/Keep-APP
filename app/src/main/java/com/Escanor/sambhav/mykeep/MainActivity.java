@@ -1,4 +1,4 @@
-package com.mykeep.r3j3ct3d.mykeep;
+package com.Escanor.sambhav.mykeep;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -12,13 +12,12 @@ import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.helper.ItemTouchHelper;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-import com.mykeep.r3j3ct3d.mykeep.NoteCreation.SimpleNoteCreation;
+import com.Escanor.sambhav.mykeep.NoteCreation.SimpleNoteCreation;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -36,7 +35,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     List<ItemObjects> staggeredList;
-    SolventRecyclerViewAdapter rcAdapter;
+    RecyclerViewAdapter rcAdapter;
 
     List<ItemObjects> listViewItems;
     RecyclerView recyclerView;
@@ -87,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
         // Load notes from internal storage
         staggeredList = loadNotes();
 
-        rcAdapter = new SolventRecyclerViewAdapter(staggeredList);
+        rcAdapter = new RecyclerViewAdapter(staggeredList);
         recyclerView.setAdapter(rcAdapter);
 
         // Drag and drop

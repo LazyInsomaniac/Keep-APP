@@ -1,20 +1,16 @@
-package com.mykeep.r3j3ct3d.mykeep;
+package com.Escanor.sambhav.mykeep;
 
 import android.app.Activity;
-import android.app.Application;
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.Drawable;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.mykeep.r3j3ct3d.mykeep.NoteCreation.SimpleNoteCreation;
+import com.Escanor.sambhav.mykeep.NoteCreation.SimpleNoteCreation;
 
-public class SolventViewHolders extends RecyclerView.ViewHolder implements View.OnClickListener {
+public class ViewHolders extends RecyclerView.ViewHolder implements View.OnClickListener {
 
     TextView    title;
     TextView    content;
@@ -22,7 +18,7 @@ public class SolventViewHolders extends RecyclerView.ViewHolder implements View.
     String      color;
     String      creationDate;
 
-    SolventViewHolders(View itemView) {
+    ViewHolders(View itemView) {
 
         super(itemView);
         itemView.setOnClickListener(this);

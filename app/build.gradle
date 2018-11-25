@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "com.mykeep.r3j3ct3d.mykeep"
+        applicationId "com.Escanor.sambhav.mykeep"
         minSdkVersion 21
         targetSdkVersion 26
         versionCode 1

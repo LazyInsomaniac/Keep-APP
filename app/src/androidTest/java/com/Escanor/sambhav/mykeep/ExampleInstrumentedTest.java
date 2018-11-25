@@ -1,4 +1,4 @@
-package com.mykeep.r3j3ct3d.mykeep;
+package com.Escanor.sambhav.mykeep;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

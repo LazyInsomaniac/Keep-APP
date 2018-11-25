@@ -1,4 +1,4 @@
-package com.mykeep.r3j3ct3d.mykeep;
+package com.Escanor.sambhav.mykeep;
 
 import android.graphics.Rect;
 import android.support.v7.widget.RecyclerView;

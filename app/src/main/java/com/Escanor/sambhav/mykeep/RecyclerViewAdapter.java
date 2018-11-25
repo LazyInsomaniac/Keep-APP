@@ -1,4 +1,4 @@
-package com.mykeep.r3j3ct3d.mykeep;
+package com.Escanor.sambhav.mykeep;
 
 import android.annotation.SuppressLint;
 import android.graphics.Color;
@@ -10,27 +10,27 @@ import android.view.ViewGroup;
 
 import java.util.List;
 
-public class SolventRecyclerViewAdapter extends RecyclerView.Adapter<SolventViewHolders> {
+public class RecyclerViewAdapter extends RecyclerView.Adapter<ViewHolders> {
 
     private List<ItemObjects> _itemList;
     private ViewGroup _parent;
 
-    SolventRecyclerViewAdapter(List<ItemObjects> itemList) {
+    RecyclerViewAdapter(List<ItemObjects> itemList) {
 
         _itemList = itemList;
     }
 
     @Override
-    public SolventViewHolders onCreateViewHolder(ViewGroup parent, int viewType) {
+    public ViewHolders onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        @SuppressLint("InflateParams") View layoutView = LayoutInflater.from(parent.getContext()).inflate(R.layout.solvent_list, null);
+        @SuppressLint("InflateParams") View layoutView = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_list, null);
 
         _parent = parent;
-        return new SolventViewHolders(layoutView);
+        return new ViewHolders(layoutView);
     }
 
     @Override
-    public void onBindViewHolder(SolventViewHolders holder, int position) {
+    public void onBindViewHolder(ViewHolders holder, int position) {
 
         holder.title.setText(_itemList.get(position).getTitle());
         // If title is empty, hide title edit text
